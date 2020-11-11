@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CBEFCD"
+        android:background="#F1DA95"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -18,6 +18,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/title"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -27,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textV1"
+        android:id="@+id/rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -40,7 +41,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textV2"
+        android:id="@+id/instance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -50,10 +51,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textV1" />
+        app:layout_constraintTop_toBottomOf="@+id/rate" />
 
     <TextView
-        android:id="@+id/textV3"
+        android:id="@+id/fee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -66,7 +67,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textV4"
+        android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -79,12 +80,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textV5"
+        android:id="@+id/text_each"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="78dp"
-        android:text="@string/Hw4_each"
+        android:text="@string/each"
         android:textColor="#000000"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -92,12 +93,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textV6"
+        android:id="@+id/text_meter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="205dp"
         android:layout_marginTop="78dp"
-        android:text="@string/Hw4_meter"
+        android:text="@string/meter"
         android:textColor="#000000"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -105,12 +106,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textV7"
+        android:id="@+id/text_dollar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="330dp"
         android:layout_marginTop="78dp"
-        android:text="@string/Hw4_dollar"
+        android:text="@string/dollar"
         android:textColor="#000000"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -132,7 +133,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit1"
+        android:id="@+id/input_instance"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -146,7 +147,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit2"
+        android:id="@+id/set_instance_rate"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
@@ -160,7 +161,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edit3"
+        android:id="@+id/input_fee"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -169,16 +170,17 @@
         android:textAlignment="center"
         android:textColor="#A32E2E"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/textV6"
+        app:layout_constraintStart_toEndOf="@+id/text_meter"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
-        android:background="#81B4CC"
-        android:text="@string/Hw4_costCompute"
+        android:layout_marginTop="250dp"
+        android:background="#8ABBE3"
+        android:text="@string/Cost_count"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
